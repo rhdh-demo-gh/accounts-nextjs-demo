@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: accounts-nextjs-demo
+  description: Demo Next.js application
+  annotations:
+    argocd/app-name: accounts-nextjs-demo
+    backstage.io/kubernetes-id: accounts-nextjs-demo
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=accounts-nextjs-demo'
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: rhdh-demo-gh/accounts-nextjs-demo
+spec:
+  type: website
+  system: system:default/business-account-platform
+  lifecycle: dev
+  owner: group:default/accounts-team

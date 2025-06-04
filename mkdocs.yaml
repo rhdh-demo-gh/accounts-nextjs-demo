@@ -1,0 +1,5 @@
+site_name: accounts-nextjs-demo
+site_description: accounts-nextjs-demo
+
+plugins:
+  - techdocs-core
